@@ -1,0 +1,102 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+body{
+
+display: flex;
+min-height: 100vh;
+justify-content: center;
+align-items: center;
+background-color: #f8f8f8;
+user-select: none;
+}
+
+.inputbox{
+
+  position: relative;
+  width: 450px;
+}
+
+.inputbox h1{
+
+  font-size: 28px;
+  color: #333;
+}
+
+.inputbox input{
+
+border: none;
+outline: none;
+height: 60px;
+width: 100%;
+border-radius: 8px;
+margin:15px 0px 20px;
+padding: 0px 20px;
+background: transparent;
+font-size: 24px;
+letter-spacing: 4px;
+color: #333;
+box-shadow: -4px -4px 10px rgba(255, 255, 255, 1),
+             inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+             inset  -4px -4px 10px rgba(255, 255, 255, 1),
+             4px 4px 10px rgba(0, 0, 0, 0.05);
+
+}
+
+.inputbox #btn{
+
+  cursor: pointer; 
+  background-color:#333;
+  padding: 10px 15px;
+  color: #fff;
+  font-size:24px;
+  border-radius: 8px;
+  position: relative;
+  display: inline-block;
+}
+
+.inputbox #btn:active{
+
+  background-color:#9c27b0;
+
+
+}
+
+#copy{
+
+  position: absolute;
+  right: 0px;
+  top: 42px;
+  max-width: 70px;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+#copy:hover{
+  opacity: 0.8;;
+}
+
+.alertbox{
+
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  font-size: 4rem;
+  background-color:#9c27b0;
+  display: none;
+}
+
+.alertbox.active{
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
